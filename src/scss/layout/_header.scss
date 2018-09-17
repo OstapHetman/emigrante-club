@@ -1,4 +1,4 @@
-h1#hello {
-  color: rebeccapurple;
-  font-size: 40px;
+header {
+  @include background(url("../images/header-bg.png"));
+  min-height: 900px;
 }
