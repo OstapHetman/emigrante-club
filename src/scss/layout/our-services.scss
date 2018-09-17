@@ -6,10 +6,7 @@
 
   padding-top: 70px;
   padding-bottom: 55px;
-  border-bottom: 5px solid;
-  -webkit-border-image: url("../images/border.png") 30 stretch; /* Safari 3.1-5 */
-  -o-border-image: url("../images/border.png") 30 stretch; /* Opera 11-12.1 */
-  border-image: url("../images/border.png") 30 stretch;
+  @include imageBorder;
   h1 {
     font-family: "PT Sans";
     color: #000;

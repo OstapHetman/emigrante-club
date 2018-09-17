@@ -1,0 +1,43 @@
+#about-company {
+  $title-clr: #128dba;
+  padding-top: 40px;
+  padding-bottom: 55px;
+  @include imageBorder;
+  h1 {
+    font-family: "PT Sans";
+    color: $title-clr;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-bottom: 50px;
+  }
+  .about-text {
+    p {
+      font-family: "Myriad Pro";
+      font-size: 20px;
+      font-weight: 400;
+      letter-spacing: 1px;
+      color: #000;
+    }
+  }
+  .flags {
+    padding-top: 50px;
+    .flag-item {
+      a {
+        &:hover {
+          text-decoration: unset;
+        }
+      }
+      &__image {
+        min-height: 153px;
+      }
+      &__text {
+        font-family: "Myriad Pro";
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        color: #000;
+      }
+    }
+  }
+}

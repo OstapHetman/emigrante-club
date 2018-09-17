@@ -5,3 +5,9 @@
   background-position: center center;
   color: #fff;
 }
+@mixin imageBorder() {
+  border-bottom: 5px solid;
+  -webkit-border-image: url("../images/border.png") 30 stretch; /* Safari 3.1-5 */
+  -o-border-image: url("../images/border.png") 30 stretch; /* Opera 11-12.1 */
+  border-image: url("../images/border.png") 30 stretch;
+}
