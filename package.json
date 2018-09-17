@@ -1,0 +1,26 @@
+{
+  "name": "emigrante-club",
+  "version": "1.0.0",
+  "description": "Commercial template for Emigrante.Club",
+  "main": "index.js",
+  "scripts": {
+    "start": "node-sass -o src/assets/css/ src/scss/main.scss -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OstapHetman/emigrante-club.git"
+  },
+  "keywords": [
+    "bootstrap4",
+    "template"
+  ],
+  "author": "Ostap Hetman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OstapHetman/emigrante-club/issues"
+  },
+  "homepage": "https://github.com/OstapHetman/emigrante-club#readme",
+  "dependencies": {
+    "node-sass": "^4.9.3"
+  }
+}
