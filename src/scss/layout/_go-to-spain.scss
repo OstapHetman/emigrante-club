@@ -1,0 +1,27 @@
+#go-to-spain {
+  padding-top: 60px;
+  padding-bottom: 80px;
+  h1 {
+    font-family: "PT Sans", sans-serif;
+    color: #008ebd;
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 55px;
+  }
+  .go-to-spain-text {
+    background-image: url("../images/spain-flag-lg.png");
+    background-position: center center;
+    background-repeat: no-repeat no-repeat;
+    background-size: contain;
+    padding: 30px 0;
+    p,
+    ul {
+      font-family: "Lato", sans-serif;
+      font-weight: 300;
+      letter-spacing: 0.9px;
+      font-size: 18px;
+      color: #000;
+    }
+  }
+}

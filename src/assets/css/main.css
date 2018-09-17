@@ -6,6 +6,10 @@
   font-family: "Myriad Pro";
   src: url("../fonts/MyriadPro/MyriadPro.otf") format("truetype"); }
 
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato/LatoRegular.ttf") format("truetype"); }
+
 header {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/header-bg.png") no-repeat;
   background-size: cover;
@@ -116,3 +120,27 @@ header {
     #achievements .achievement__text p {
       font-size: 23px;
       font-weight: 400; }
+
+#go-to-spain {
+  padding-top: 60px;
+  padding-bottom: 80px; }
+  #go-to-spain h1 {
+    font-family: "PT Sans", sans-serif;
+    color: #008ebd;
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 55px; }
+  #go-to-spain .go-to-spain-text {
+    background-image: url("../images/spain-flag-lg.png");
+    background-position: center center;
+    background-repeat: no-repeat no-repeat;
+    background-size: contain;
+    padding: 30px 0; }
+    #go-to-spain .go-to-spain-text p,
+    #go-to-spain .go-to-spain-text ul {
+      font-family: "Lato", sans-serif;
+      font-weight: 300;
+      letter-spacing: 0.9px;
+      font-size: 18px;
+      color: #000; }
