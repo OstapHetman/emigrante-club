@@ -1,0 +1,73 @@
+nav.navbar {
+  a.navbar-brand {
+    font-size: 45px;
+    font-style: italic;
+  }
+  ul {
+    &.social {
+      li {
+        padding-right: 15px;
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+    }
+    li {
+      .dropdown-menu {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+      a {
+        font-family: "Lato-Regular", sans-serif;
+        font-weight: bold;
+        color: #fff;
+        font-size: 20px;
+        font-style: normal;
+        &.btn {
+          font-family: "Lato", sans-serif;
+          color: #fff;
+          font-size: 17px;
+          font-weight: bold;
+          background-color: #08507a;
+          border-radius: 5px;
+        }
+        &.dropdown-item {
+          color: #fff;
+          font-family: "Lato", sans-serif;
+          font-weight: 100;
+          font-size: 15px;
+          &:hover {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+    font-family: "PT Sans";
+    font-style: italic;
+    .time-item {
+      &__icon {
+        img {
+          max-width: 30px;
+        }
+      }
+      &__text {
+        p:first-child {
+          font-size: 15px;
+        }
+        p {
+          font-size: 13px;
+        }
+      }
+    }
+    .phone-item {
+      &__text {
+        p {
+          font-size: 15px;
+        }
+        a {
+          text-decoration: underline;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

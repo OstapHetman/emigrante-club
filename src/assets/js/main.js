@@ -1,0 +1,1 @@
+$("#checkBox").prop("indeterminate", true);

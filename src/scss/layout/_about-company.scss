@@ -28,8 +28,10 @@
     padding-top: 50px;
     .flag-item {
       a {
+        transition: 0.3s ease-in-out;
         &:hover {
           text-decoration: unset;
+          transform: scale(1.1);
         }
       }
       &__image {
