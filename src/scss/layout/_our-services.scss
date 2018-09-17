@@ -16,9 +16,18 @@
     padding-bottom: 80px;
   }
   .services-item {
+    a {
+      display: block;
+      transition: 0.3s ease-in-out;
+      &:hover {
+        text-decoration: unset;
+        transform: scale(1.1);
+      }
+    }
     margin-bottom: 110px;
     &__image {
       padding-bottom: 20px;
+      min-height: 120px;
     }
     &__text {
       p {

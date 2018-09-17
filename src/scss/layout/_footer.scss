@@ -1,0 +1,84 @@
+footer {
+  $footer-bg: #f4f2f2;
+  $footer-bottom: #ece9e9;
+
+  background-color: $footer-bg;
+  padding-top: 55px;
+
+  h1 {
+    color: #008fc0;
+    font-family: "Myriad Pro", sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 1.25px;
+  }
+  ul {
+    li {
+      a {
+        color: #696969;
+        font-family: "Lato", sans-serif;
+        font-size: 15px;
+        font-weight: 300;
+        letter-spacing: 0.75px;
+        &:hover {
+          text-decoration: unset;
+          color: #696969;
+        }
+      }
+    }
+  }
+  .social {
+    font-family: "PT Sans";
+    font-style: italic;
+    color: #000;
+    .time-item {
+      &__icon {
+        img {
+          max-width: 30px;
+        }
+      }
+      &__text {
+        p:first-child {
+          font-size: 15px;
+        }
+        p {
+          font-size: 13px;
+        }
+      }
+    }
+    .phone-item {
+      &__text {
+        p {
+          font-size: 15px;
+        }
+        a {
+          color: #000;
+          text-decoration: underline;
+          font-size: 12px;
+        }
+      }
+    }
+    button.btn {
+      font-family: "Lato", sans-serif;
+      color: #fff;
+      font-size: 17px;
+      font-weight: bold;
+      background-color: #128dba;
+      border-radius: 5px;
+    }
+  }
+  .bottom-footer {
+    background-color: $footer-bottom;
+    margin-top: 70px;
+    padding: 15px;
+    font-family: "Lato-Light", sans-serif;
+    font-weight: 100;
+    span {
+      color: #696969;
+    }
+    a {
+      text-decoration: underline;
+      color: #696969;
+    }
+  }
+}

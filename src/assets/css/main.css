@@ -10,6 +10,10 @@
   font-family: "Lato";
   src: url("../fonts/Lato/LatoRegular.ttf") format("truetype"); }
 
+@font-face {
+  font-family: "Lato-Light";
+  src: url("../fonts/Lato/LatoLight.ttf") format("truetype"); }
+
 header {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/header-bg.png") no-repeat;
   background-size: cover;
@@ -39,8 +43,15 @@ header {
     padding-bottom: 80px; }
   #our-services .services-item {
     margin-bottom: 110px; }
+    #our-services .services-item a {
+      display: block;
+      transition: 0.3s ease-in-out; }
+      #our-services .services-item a:hover {
+        text-decoration: unset;
+        transform: scale(1.1); }
     #our-services .services-item__image {
-      padding-bottom: 20px; }
+      padding-bottom: 20px;
+      min-height: 120px; }
     #our-services .services-item__text p {
       color: #000000;
       font-family: "Myriad Pro";
@@ -144,3 +155,90 @@ header {
       letter-spacing: 0.9px;
       font-size: 18px;
       color: #000; }
+
+#get-call {
+  padding: 20px 0;
+  background-color: #008fc0; }
+  #get-call h2 {
+    font-family: "Lato", sans-serif;
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 1.8px; }
+  #get-call button {
+    font-family: "Lato", sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 1.05px;
+    background-color: #08507a;
+    color: #fff;
+    border-radius: 10px; }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    #get-call button {
+      font-size: 18px; }
+    #get-call h2 {
+      font-size: 19px; } }
+  @media screen and (max-width: 767px) {
+    #get-call {
+      padding: 25px 0; }
+      #get-call button {
+        font-size: 18px;
+        margin: auto;
+        display: block; }
+      #get-call h2 {
+        padding-bottom: 15px;
+        text-align: center;
+        font-size: 19px; } }
+
+footer {
+  background-color: #f4f2f2;
+  padding-top: 55px; }
+  footer h1 {
+    color: #008fc0;
+    font-family: "Myriad Pro", sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 1.25px; }
+  footer ul li a {
+    color: #696969;
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 0.75px; }
+    footer ul li a:hover {
+      text-decoration: unset;
+      color: #696969; }
+  footer .social {
+    font-family: "PT Sans";
+    font-style: italic;
+    color: #000; }
+    footer .social .time-item__icon img {
+      max-width: 30px; }
+    footer .social .time-item__text p:first-child {
+      font-size: 15px; }
+    footer .social .time-item__text p {
+      font-size: 13px; }
+    footer .social .phone-item__text p {
+      font-size: 15px; }
+    footer .social .phone-item__text a {
+      color: #000;
+      text-decoration: underline;
+      font-size: 12px; }
+    footer .social button.btn {
+      font-family: "Lato", sans-serif;
+      color: #fff;
+      font-size: 17px;
+      font-weight: bold;
+      background-color: #128dba;
+      border-radius: 5px; }
+  footer .bottom-footer {
+    background-color: #ece9e9;
+    margin-top: 70px;
+    padding: 15px;
+    font-family: "Lato-Light", sans-serif;
+    font-weight: 100; }
+    footer .bottom-footer span {
+      color: #696969; }
+    footer .bottom-footer a {
+      text-decoration: underline;
+      color: #696969; }
