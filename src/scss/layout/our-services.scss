@@ -1,0 +1,39 @@
+#our-services {
+  background-image: url("../images/our-services-bg.png");
+  background-position: center center;
+  background-repeat: no-repeat no-repeat;
+  background-size: contain;
+
+  padding-top: 70px;
+  padding-bottom: 55px;
+  border-bottom: 5px solid;
+  -webkit-border-image: url("../images/border.png") 30 stretch; /* Safari 3.1-5 */
+  -o-border-image: url("../images/border.png") 30 stretch; /* Opera 11-12.1 */
+  border-image: url("../images/border.png") 30 stretch;
+  h1 {
+    font-family: "PT Sans";
+    color: #000;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-bottom: 80px;
+  }
+  .services-item {
+    margin-bottom: 110px;
+    &__image {
+      padding-bottom: 20px;
+    }
+    &__text {
+      p {
+        color: #000000;
+        font-family: "Myriad Pro";
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: 1px;
+      }
+    }
+  }
+  .services-item:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+  }
+}
