@@ -62,12 +62,17 @@ header {
     font-weight: bold;
     letter-spacing: 2px;
     padding-bottom: 50px; }
-  #about-company .about-text p {
-    font-family: "Myriad Pro";
-    font-size: 20px;
-    font-weight: 400;
-    letter-spacing: 1px;
-    color: #000; }
+  #about-company .about-text {
+    background-image: url("../images/about-bg.png");
+    background-position: left center;
+    background-repeat: no-repeat no-repeat;
+    background-size: contain; }
+    #about-company .about-text p {
+      font-family: "Myriad Pro";
+      font-size: 20px;
+      font-weight: 400;
+      letter-spacing: 1px;
+      color: #000; }
   #about-company .flags {
     padding-top: 50px; }
     #about-company .flags .flag-item a:hover {
@@ -80,3 +85,34 @@ header {
       font-weight: 400;
       letter-spacing: 1px;
       color: #000; }
+
+#achievements {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/achievements-bg.png") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+  border-bottom: 5px solid;
+  -webkit-border-image: url("../images/border.png") 30 stretch;
+  /* Safari 3.1-5 */
+  -o-border-image: url("../images/border.png") 30 stretch;
+  /* Opera 11-12.1 */
+  border-image: url("../images/border.png") 30 stretch;
+  padding: 80px 0; }
+  #achievements h1 {
+    padding-bottom: 70px;
+    font-family: "PT Sans";
+    color: #fff;
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-bottom: 80px; }
+  #achievements .achievement__icon img {
+    max-width: 55px; }
+  #achievements .achievement__text {
+    font-family: "Myriad Pro";
+    color: #fff; }
+    #achievements .achievement__text b {
+      font-size: 40px; }
+    #achievements .achievement__text p {
+      font-size: 23px;
+      font-weight: 400; }

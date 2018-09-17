@@ -12,6 +12,10 @@
     padding-bottom: 50px;
   }
   .about-text {
+    background-image: url("../images/about-bg.png");
+    background-position: left center;
+    background-repeat: no-repeat no-repeat;
+    background-size: contain;
     p {
       font-family: "Myriad Pro";
       font-size: 20px;

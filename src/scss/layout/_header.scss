@@ -1,4 +1,4 @@
 header {
-  @include background(url("../images/header-bg.png"));
+  @include background(url("../images/header-bg.png"), 0.5);
   min-height: 900px;
 }
