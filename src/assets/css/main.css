@@ -939,3 +939,72 @@ main#about-company-page {
         margin-bottom: 16px; }
       main#about-company-page .about-text ul li {
         margin-bottom: 16px; } }
+
+#contacts-page {
+  padding-bottom: 65px;
+  background-color: #fbfbfb; }
+  #contacts-page h1 {
+    font-family: "PT Sans", sans-serif;
+    font-weight: bold;
+    padding: 56px 0;
+    color: #128dba;
+    letter-spacing: 2px;
+    font-size: 40px; }
+    @media screen and (max-width: 576px) {
+      #contacts-page h1 {
+        padding: 25px 0;
+        font-size: 28px; } }
+  #contacts-page .contacts__info ul li {
+    display: flex;
+    align-items: center; }
+    #contacts-page .contacts__info ul li img {
+      max-width: 48px; }
+    #contacts-page .contacts__info ul li ul {
+      padding-left: 15px; }
+      #contacts-page .contacts__info ul li ul li {
+        font-family: "Lato", sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        letter-spacing: 1px;
+        color: #09445e; }
+        #contacts-page .contacts__info ul li ul li a {
+          color: #09445e; }
+  #contacts-page .contacts__button a {
+    background-color: #228fca;
+    color: #fff;
+    border-radius: 10px;
+    font-family: "Lato", sans-serif;
+    font-size: 29px;
+    font-weight: bold;
+    letter-spacing: 0.73px; }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    #contacts-page .contacts__info ul li img {
+      max-width: 30px; }
+    #contacts-page .contacts__info ul li ul {
+      padding-left: 15px; }
+      #contacts-page .contacts__info ul li ul li {
+        font-family: "Lato", sans-serif;
+        font-weight: bold;
+        font-size: 15px;
+        letter-spacing: 1px;
+        color: #09445e; }
+        #contacts-page .contacts__info ul li ul li a {
+          color: #09445e; } }
+  @media screen and (max-width: 767px) {
+    #contacts-page .contacts {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      #contacts-page .contacts__info ul li img {
+        max-width: 30px; }
+      #contacts-page .contacts__info ul li ul {
+        padding-left: 15px; }
+        #contacts-page .contacts__info ul li ul li {
+          font-family: "Lato", sans-serif;
+          font-weight: bold;
+          font-size: 15px;
+          letter-spacing: 1px;
+          color: #09445e; }
+          #contacts-page .contacts__info ul li ul li a {
+            color: #09445e; } }
