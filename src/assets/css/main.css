@@ -65,6 +65,91 @@
   transform: scaleX(1);
   transform-origin: bottom left; }
 
+.custom-modals.show {
+  display: flex !important; }
+  .custom-modals.show .modal-dialog {
+    margin: auto; }
+
+.custom-modals .modal-header {
+  border-bottom: unset;
+  padding: 0; }
+  .custom-modals .modal-header button {
+    color: #128dba;
+    opacity: 1;
+    font-size: 40px; }
+    .custom-modals .modal-header button:hover span {
+      color: #128dba; }
+
+.custom-modals .modal-content {
+  padding: 20px 30px;
+  border-radius: unset;
+  border: 8px #128dba solid; }
+
+.custom-modals .modal-body {
+  padding-top: 0; }
+  .custom-modals .modal-body input,
+  .custom-modals .modal-body textarea {
+    background-color: #f8f8f8;
+    border: unset;
+    border-radius: 10px;
+    padding: 25px 35px;
+    margin-top: 30px;
+    width: 100%;
+    margin: 0 auto; }
+    .custom-modals .modal-body input:focus,
+    .custom-modals .modal-body textarea:focus {
+      box-shadow: unset; }
+    .custom-modals .modal-body input::-webkit-input-placeholder,
+    .custom-modals .modal-body textarea::-webkit-input-placeholder {
+      /* Chrome/Opera/Safari */
+      color: #ced4da;
+      font-size: em(15); }
+    .custom-modals .modal-body input::-moz-placeholder,
+    .custom-modals .modal-body textarea::-moz-placeholder {
+      /* Firefox 19+ */
+      color: #ced4da;
+      font-size: em(15); }
+    .custom-modals .modal-body input:-ms-input-placeholder,
+    .custom-modals .modal-body textarea:-ms-input-placeholder {
+      /* IE 10+ */
+      color: #ced4da;
+      font-size: em(15); }
+    .custom-modals .modal-body input:-moz-placeholder,
+    .custom-modals .modal-body textarea:-moz-placeholder {
+      /* Firefox 18- */
+      color: #ced4da;
+      font-size: em(15); }
+  .custom-modals .modal-body h1 {
+    font-size: 28px;
+    color: #128dba;
+    font-family: "Lato-Regular", sans-serif;
+    font-weight: bold; }
+  .custom-modals .modal-body p {
+    font-size: 16px;
+    font-family: "Lato-Regular", sans-serif;
+    font-weight: bold;
+    color: #128dba; }
+  .custom-modals .modal-body input[type="submit"] {
+    font-family: "Lato-Regular", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: #128dba;
+    color: #fff;
+    padding: 10px 50px; }
+
+@media screen and (max-width: 575px) {
+  .custom-modals .modal-content {
+    padding: 20px 10px;
+    border-radius: unset;
+    border: unset; }
+  .custom-modals .modal-body h1 {
+    font-size: 22px; }
+  .custom-modals .modal-body p {
+    font-size: 12px; }
+  .custom-modals .modal-body input[type="submit"] {
+    font-size: 14px; } }
+
 nav.navbar a.navbar-brand {
   font-family: "SignPainter", sans-serif;
   font-size: 45px;

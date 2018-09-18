@@ -2,10 +2,12 @@
 @import "base/typography";
 // ======================= //
 // ===== Components Folder====== //
+@import "component/animation";
+@import "component/modals";
 // ======================= //
 // ===== Helpers Folder====== //
 @import "helpers/mixins";
-@import "component/animation";
+
 // ======================= //
 // ===== Layout Folder====== //
 @import "layout/navigation";

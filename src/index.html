@@ -43,7 +43,7 @@
                             </div>
                             <div class="phone-item__text">
                                 <p class="mb-0">+38 (000) 111-11-11</p>
-                                <a href="#">Заказать обратный звонок</a>
+                                <a href="#" data-toggle="modal" data-target="#getCallModal">Заказать обратный звонок</a>
                             </div>
                         </li>
                         <li class="nav-item d-flex align-items-center">
@@ -90,7 +90,8 @@
                             <a class="nav-link hover-underline-animation" href="#">Контакты</a>
                         </li>
                         <li class="nav-item">
-                            <a class="btn nav-link px-3 shine-btn" href="#">Оформить заявку</a>
+                            <a class="btn nav-link px-3 shine-btn" href="#" data-toggle="modal" data-target="#getCallModal">Оформить
+                                заявку</a>
                         </li>
                     </ul>
                 </div>
@@ -415,7 +416,7 @@
                     <h2 class="mb-0">Интересует иммиграция в Испанию ?</h2>
                 </div>
                 <div class="col-md-5 col-lg-4 col-xl-4">
-                    <button class="shine-btn btn px-4 py-3 shine-btn" data-toggle="modal" data-target="#getCallModal">Получить
+                    <button class="shine-btn btn px-4 py-3 shine-btn" data-toggle="modal" data-target="#getConsult">Получить
                         консультацию!</button>
                 </div>
             </div>
@@ -470,7 +471,7 @@
                             </div>
                             <div class="phone-item__text">
                                 <p class="mb-0">+38 (000) 111-11-11</p>
-                                <a href="#">Заказать обратный звонок</a>
+                                <a href="#" data-toggle="modal" data-target="#getCallModal">Заказать обратный звонок</a>
                             </div>
                         </div>
                     </div>
@@ -483,7 +484,8 @@
                             </ul>
                         </div>
                         <div class="col-6 d-flex justify-content-center">
-                            <button class="btn shine-btn">Оформить заявку</button>
+                            <button class="btn shine-btn" data-toggle="modal" data-target="#getCallModal">Оформить
+                                заявку</button>
                         </div>
                     </div>
                 </div>
@@ -501,6 +503,78 @@
         </div>
     </footer>
     <!-- End Footer -->
+
+    <!-- Start Modal -->
+    <div class="custom-modals modal fade" id="getCallModal" tabindex="-1" role="dialog" aria-labelledby="getCallModal"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h1 class="text-center">Оформить заявку</h1>
+                    <p class="text-center mb-4">Введите ваше имя и номер телефона,<br> специалист компании свяжется
+                        с вами и ответит на ваши вопросы</p>
+                    <div class="container">
+                        <form>
+                            <div class="form-group">
+                                <input class="form-control" type="text" name="name" id="name" placeholder="Укажите имя">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="text" name="phone" id="name" placeholder="Укажите номер телефона"
+                                    required>
+                            </div>
+                            <div class="form-group mb-4">
+                                <textarea class="form-control" rows="2" placeholder="Введите сообщение"></textarea>
+                            </div>
+                            <div class="form-group d-flex justify-content-center">
+                                <input class="btn shine-btn" type="submit" value="Позвоните мне">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal -->
+
+    <!-- Start Modal -->
+    <div class="custom-modals modal fade" id="getConsult" tabindex="-1" role="dialog" aria-labelledby="getCallModal"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h1 class="text-center">Получите консультацию</h1>
+                    <p class="text-center mb-4">Введите ваше имя и номер телефона,<br> специалист компании свяжется
+                        с вами и ответит на ваши вопросы</p>
+                    <div class="container">
+                        <form>
+                            <div class="form-group">
+                                <input class="form-control" type="text" name="name" id="name" placeholder="Укажите имя">
+                            </div>
+                            <div class="form-group mb-4">
+                                <input class="form-control" type="text" name="phone" id="name" placeholder="Укажите номер телефона"
+                                    required>
+                            </div>
+
+                            <div class="form-group d-flex justify-content-center">
+                                <input class="btn shine-btn" type="submit" value="Получить консультацию">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal -->
 
 
     <!-- Optional JavaScript -->
