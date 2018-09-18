@@ -22,7 +22,14 @@
     color: #fff;
     border-radius: 10px;
   }
-
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    button {
+      font-size: 18px;
+    }
+    h2 {
+      font-size: 25px;
+    }
+  }
   @media screen and (min-width: 768px) and (max-width: 991px) {
     button {
       font-size: 18px;
@@ -35,7 +42,7 @@
   @media screen and (max-width: 767px) {
     padding: 25px 0;
     button {
-      font-size: 18px;
+      font-size: 15px;
       margin: auto;
       display: block;
     }

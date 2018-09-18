@@ -12,6 +12,21 @@ footer {
     font-weight: 400;
     letter-spacing: 1.25px;
   }
+  .pseudo {
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 26%;
+      right: 0;
+      height: 118px;
+      width: 2px;
+      border-radius: 1px;
+      background-color: #106e98;
+      opacity: 0.1;
+    }
+  }
   ul {
     li {
       a {
@@ -76,10 +91,239 @@ footer {
     font-weight: 100;
     span {
       color: #696969;
+      &.brand {
+        font-size: 25px;
+        font-family: "SignPainter", sans-serif;
+        color: #1abaf4;
+        font-weight: bold;
+      }
     }
     a {
       text-decoration: underline;
       color: #696969;
+    }
+  }
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    ul {
+      li {
+        a {
+          font-size: 12px;
+        }
+      }
+    }
+    .social {
+      .time-item {
+        &__icon {
+          img {
+            max-width: 25px;
+          }
+        }
+        &__text {
+          p:first-child {
+            font-size: 14px;
+          }
+          p {
+            font-size: 12px;
+          }
+        }
+      }
+      .phone-item {
+        &__text {
+          p {
+            font-size: 14px;
+          }
+          a {
+            font-size: 10px;
+          }
+        }
+      }
+      button.btn {
+        font-size: 14px;
+      }
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    ul {
+      li {
+        a {
+          font-size: 13px;
+        }
+      }
+      &.social-icons {
+        margin-top: 23px;
+      }
+    }
+    .pseudo {
+      position: relative;
+      &:after {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 26%;
+        height: 118px;
+        width: 2px;
+        border-radius: 1px;
+        background-color: #106e98;
+        opacity: 0.1;
+      }
+      &.pseudo-first {
+        &:after {
+          right: 6%;
+        }
+      }
+      &.pseudo-second {
+        &:after {
+          right: 25%;
+        }
+      }
+    }
+    .social {
+      margin-top: 20px;
+      .time-item {
+        &__icon {
+          img {
+            max-width: 25px;
+          }
+        }
+        &__text {
+          p:first-child {
+            font-size: 14px;
+          }
+          p {
+            font-size: 12px;
+          }
+        }
+      }
+      .phone-item {
+        &__text {
+          display: flex;
+          flex-direction: column;
+          p {
+            font-size: 14px;
+          }
+          a {
+            font-size: 12px;
+          }
+        }
+      }
+      button.btn {
+        margin-top: 20px;
+        font-size: 14px;
+      }
+    }
+  }
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    padding-top: 25px;
+    h1 {
+      margin-top: 10px;
+      font-size: 20px;
+    }
+    .pseudo {
+      &:after {
+        display: none;
+      }
+    }
+    ul {
+      li {
+        a {
+          font-size: 13px;
+        }
+      }
+      &.social-icons {
+        margin-top: 23px;
+      }
+    }
+    .social {
+      margin-top: 20px;
+      .time-item {
+        &__icon {
+          img {
+            max-width: 25px;
+          }
+        }
+        &__text {
+          p:first-child {
+            font-size: 14px;
+          }
+          p {
+            font-size: 12px;
+          }
+        }
+      }
+      .phone-item {
+        &__text {
+          display: flex;
+          flex-direction: column;
+          p {
+            font-size: 14px;
+          }
+          a {
+            font-size: 12px;
+          }
+        }
+      }
+      button.btn {
+        margin-top: 20px;
+        font-size: 14px;
+      }
+    }
+  }
+  @media screen and (max-width: 575px) {
+    padding-top: 25px;
+    h1 {
+      margin-top: 10px;
+      font-size: 20px;
+    }
+    .pseudo {
+      &:after {
+        display: none;
+      }
+    }
+    ul {
+      margin-top: 10px;
+      li {
+        a {
+          font-size: 14px;
+        }
+      }
+      &.social-icons {
+        margin-top: 23px;
+      }
+    }
+    .social {
+      margin-top: 20px;
+      .time-item {
+        &__icon {
+          img {
+            max-width: 25px;
+          }
+        }
+        &__text {
+          p:first-child {
+            font-size: 14px;
+          }
+          p {
+            font-size: 12px;
+          }
+        }
+      }
+      .phone-item {
+        padding-top: 15px;
+        &__text {
+          display: flex;
+          flex-direction: column;
+          p {
+            font-size: 14px;
+          }
+          a {
+            font-size: 12px;
+          }
+        }
+      }
+      button.btn {
+        margin-top: 20px;
+        font-size: 14px;
+      }
     }
   }
 }

@@ -1,7 +1,18 @@
 nav.navbar {
   a.navbar-brand {
+    font-family: "SignPainter", sans-serif;
     font-size: 45px;
+    font-weight: bold;
     font-style: italic;
+    color: #1abaf4;
+  }
+  .navbar-toggler {
+    i {
+      color: #fff;
+    }
+    &:focus {
+      outline: unset;
+    }
   }
   ul {
     &.social {
@@ -84,6 +95,62 @@ nav.navbar {
           font-style: italic;
           text-decoration: underline;
           font-size: 12px;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    a.navbar-brand {
+      font-size: 36px;
+    }
+    ul {
+      li {
+        a {
+          font-size: 16px;
+          &.btn {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    a.navbar-brand {
+      font-size: 32px;
+    }
+    ul {
+      li {
+        a {
+          text-align: center;
+          font-size: 16px;
+          &.btn {
+            font-size: 15px;
+            width: 50%;
+            margin: auto;
+          }
+        }
+      }
+    }
+    .navbar-collapse {
+      background: rgba(0, 0, 0, 0.8);
+      position: absolute;
+      top: -10px;
+      right: 0px;
+      left: 0px;
+      z-index: 100;
+      height: 81vh;
+      transition: all 0.5s;
+      ul {
+        transition: all 0.5s;
+        height: 100%;
+        justify-content: center;
+        .dropdown-menu {
+          background-color: unset;
+          border: unset;
+          a {
+            font-size: 12px;
+          }
         }
       }
     }

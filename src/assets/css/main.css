@@ -14,6 +14,10 @@
   font-family: "Lato-Light";
   src: url("../fonts/Lato/LatoLight.ttf") format("truetype"); }
 
+@font-face {
+  font-family: "SignPainter";
+  src: url("../fonts/Sign/SignPainter.ttc") format("truetype"); }
+
 .shine-btn {
   background: linear-gradient(-45deg, #0694ea, #004d80, #228fca);
   background-size: 400% 400%;
@@ -62,8 +66,17 @@
   transform-origin: bottom left; }
 
 nav.navbar a.navbar-brand {
+  font-family: "SignPainter", sans-serif;
   font-size: 45px;
-  font-style: italic; }
+  font-weight: bold;
+  font-style: italic;
+  color: #1abaf4; }
+
+nav.navbar .navbar-toggler i {
+  color: #fff; }
+
+nav.navbar .navbar-toggler:focus {
+  outline: unset; }
 
 nav.navbar ul {
   font-family: "PT Sans";
@@ -118,6 +131,43 @@ nav.navbar ul {
     font-style: italic;
     text-decoration: underline;
     font-size: 12px; }
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  nav.navbar a.navbar-brand {
+    font-size: 36px; }
+  nav.navbar ul li a {
+    font-size: 16px; }
+    nav.navbar ul li a.btn {
+      font-size: 15px; } }
+
+@media screen and (max-width: 991px) {
+  nav.navbar a.navbar-brand {
+    font-size: 32px; }
+  nav.navbar ul li a {
+    text-align: center;
+    font-size: 16px; }
+    nav.navbar ul li a.btn {
+      font-size: 15px;
+      width: 50%;
+      margin: auto; }
+  nav.navbar .navbar-collapse {
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: -10px;
+    right: 0px;
+    left: 0px;
+    z-index: 100;
+    height: 81vh;
+    transition: all 0.5s; }
+    nav.navbar .navbar-collapse ul {
+      transition: all 0.5s;
+      height: 100%;
+      justify-content: center; }
+      nav.navbar .navbar-collapse ul .dropdown-menu {
+        background-color: unset;
+        border: unset; }
+        nav.navbar .navbar-collapse ul .dropdown-menu a {
+          font-size: 12px; } }
 
 header {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/header-bg.png") no-repeat;
@@ -188,6 +238,89 @@ header {
       top: -16px;
       left: -5px;
       visibility: visible; }
+    header .contact-form form .form-check label {
+      font-family: "Lato-light", sans-serif;
+      font-weight: bold;
+      font-size: 15px; }
+    header .contact-form form span {
+      font-family: "Lato-light", sans-serif;
+      font-weight: bold;
+      font-size: 15px; }
+      header .contact-form form span a {
+        color: #fff;
+        position: relative;
+        text-decoration: underline; }
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    header h1 {
+      margin-top: 80px;
+      font-size: 50px; }
+    header .contact-form form input[type="submit"] {
+      font-size: 22px; } }
+  @media screen and (max-width: 991px) {
+    header h1 {
+      margin-top: 0; } }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    header {
+      min-height: unset;
+      padding-bottom: 50px; }
+      header h1 {
+        font-size: 40px; }
+      header .contact-form form input[type="submit"] {
+        font-size: 22px; }
+      header p.description {
+        padding-bottom: 35px;
+        font-size: 16px; }
+      header .contact-form p {
+        font-size: 16px; }
+      header .contact-form form input[type="text"],
+      header .contact-form form input[type="email"] {
+        padding: 25px 10px;
+        max-width: unset; } }
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    header {
+      min-height: unset;
+      padding-bottom: 50px; }
+      header h1 {
+        font-size: 30px; }
+      header .contact-form form input[type="submit"] {
+        font-size: 22px; }
+      header p.description {
+        padding-bottom: 35px;
+        font-size: 16px; }
+      header .contact-form p {
+        font-size: 16px; }
+      header .contact-form form input[type="text"],
+      header .contact-form form input[type="email"] {
+        padding: 25px 10px;
+        max-width: unset; }
+      header .contact-form form .form-check label {
+        font-size: 14px; }
+      header .contact-form form span {
+        font-size: 14px; } }
+  @media screen and (max-width: 575px) {
+    header {
+      min-height: unset;
+      padding-bottom: 50px; }
+      header h1 {
+        font-size: 24px; }
+      header .contact-form form input[type="submit"] {
+        font-size: 14px; }
+      header p.description {
+        padding-bottom: 35px;
+        font-size: 14px; }
+      header .contact-form p {
+        font-size: 14px; }
+      header .contact-form form {
+        padding-top: unset; }
+        header .contact-form form input[type="text"],
+        header .contact-form form input[type="email"] {
+          padding: 15px 10px;
+          max-width: unset;
+          margin-top: 15px; }
+        header .contact-form form .form-check label {
+          font-size: 12px; }
+        header .contact-form form span {
+          font-size: 12px; } }
 
 #our-services {
   background-image: url("../images/our-services-bg.png");
@@ -226,8 +359,31 @@ header {
       font-size: 20px;
       font-weight: 400;
       letter-spacing: 1px; }
-  #our-services .services-item:nth-last-child(-n + 3) {
-    margin-bottom: 0; }
+  @media screen and (min-width: 768px) {
+    #our-services .services-item:nth-last-child(-n + 3) {
+      margin-bottom: 0; } }
+  @media screen and (max-width: 575px) {
+    #our-services {
+      padding-top: 35px;
+      padding-bottom: 0px; }
+      #our-services h1 {
+        font-size: 30px; }
+      #our-services .services-item {
+        margin-bottom: 40px; }
+        #our-services .services-item a:hover {
+          transform: unset; }
+        #our-services .services-item__image {
+          min-height: unset !important;
+          padding-bottom: 10px; }
+          #our-services .services-item__image img {
+            max-width: 50px !important; } }
+  @media screen and (max-width: 991px) {
+    #our-services .services-item__image {
+      min-height: 125px; }
+      #our-services .services-item__image img {
+        max-width: 80px; }
+    #our-services .services-item__text p {
+      font-size: 14px; } }
 
 #about-company {
   padding-top: 40px;
@@ -271,6 +427,37 @@ header {
       font-weight: 400;
       letter-spacing: 1px;
       color: #000; }
+  @media screen and (max-width: 767px) {
+    #about-company .flags {
+      padding-top: 50px; }
+      #about-company .flags .flag-item a {
+        transition: unset; }
+        #about-company .flags .flag-item a:hover {
+          transform: unset; }
+      #about-company .flags .flag-item__image {
+        min-height: unset; }
+        #about-company .flags .flag-item__image img {
+          max-width: 100px; }
+      #about-company .flags .flag-item__text {
+        font-family: "Myriad Pro";
+        font-size: 15px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        color: #000; } }
+  @media screen and (max-width: 575px) {
+    #about-company {
+      padding-top: 35px;
+      padding-bottom: 20px; }
+      #about-company h1 {
+        font-size: 30px;
+        padding-bottom: 35px; }
+      #about-company .about-text p {
+        font-size: 15px;
+        text-align: justify; }
+      #about-company .flags {
+        padding-top: 25px; }
+        #about-company .flags .flag-item a:hover {
+          transform: unset; } }
 
 #achievements {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/achievements-bg.png") no-repeat;
@@ -302,6 +489,43 @@ header {
     #achievements .achievement__text p {
       font-size: 23px;
       font-weight: 400; }
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    #achievements .achievement__icon img {
+      max-width: 45px; }
+    #achievements .achievement__text b {
+      font-size: 36px; }
+    #achievements .achievement__text p {
+      font-size: 20px; } }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    #achievements .achievement__icon img {
+      max-width: 45px; }
+    #achievements .achievement__text b {
+      font-size: 36px; }
+    #achievements .achievement__text p {
+      font-size: 20px; } }
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    #achievements {
+      padding: 35px 0; }
+      #achievements h1 {
+        padding-bottom: 35px; }
+      #achievements .achievement__icon img {
+        max-width: 30px; }
+      #achievements .achievement__text b {
+        font-size: 30px; }
+      #achievements .achievement__text p {
+        font-size: 18px; } }
+  @media screen and (max-width: 575px) {
+    #achievements {
+      padding: 35px 0; }
+      #achievements h1 {
+        padding-bottom: 35px;
+        font-size: 30px; }
+      #achievements .achievement__icon img {
+        max-width: 30px; }
+      #achievements .achievement__text b {
+        font-size: 28px; }
+      #achievements .achievement__text p {
+        font-size: 18px; } }
 
 #go-to-spain {
   padding-top: 60px;
@@ -318,7 +542,8 @@ header {
     background-position: center center;
     background-repeat: no-repeat no-repeat;
     background-size: contain;
-    padding: 30px 0; }
+    padding-top: 30px;
+    padding-bottom: 30px; }
     #go-to-spain .go-to-spain-text p,
     #go-to-spain .go-to-spain-text ul {
       font-family: "Lato", sans-serif;
@@ -326,6 +551,19 @@ header {
       letter-spacing: 0.9px;
       font-size: 18px;
       color: #000; }
+  @media screen and (max-width: 575px) {
+    #go-to-spain {
+      padding-top: 35px;
+      padding-bottom: 35px; }
+      #go-to-spain h1 {
+        font-size: 30px;
+        margin-bottom: 25px; }
+      #go-to-spain .go-to-spain-text {
+        padding-top: 0px;
+        padding-bottom: 0px; }
+        #go-to-spain .go-to-spain-text p,
+        #go-to-spain .go-to-spain-text ul {
+          font-size: 15px; } }
 
 #get-call {
   padding: 20px 0;
@@ -344,6 +582,11 @@ header {
     background-color: #08507a;
     color: #fff;
     border-radius: 10px; }
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    #get-call button {
+      font-size: 18px; }
+    #get-call h2 {
+      font-size: 25px; } }
   @media screen and (min-width: 768px) and (max-width: 991px) {
     #get-call button {
       font-size: 18px; }
@@ -353,7 +596,7 @@ header {
     #get-call {
       padding: 25px 0; }
       #get-call button {
-        font-size: 18px;
+        font-size: 15px;
         margin: auto;
         display: block; }
       #get-call h2 {
@@ -370,6 +613,19 @@ footer {
     font-size: 25px;
     font-weight: 400;
     letter-spacing: 1.25px; }
+  footer .pseudo {
+    position: relative; }
+    footer .pseudo:after {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 26%;
+      right: 0;
+      height: 118px;
+      width: 2px;
+      border-radius: 1px;
+      background-color: #106e98;
+      opacity: 0.1; }
   footer ul li a {
     color: #696969;
     font-family: "Lato", sans-serif;
@@ -411,6 +667,129 @@ footer {
     font-weight: 100; }
     footer .bottom-footer span {
       color: #696969; }
+      footer .bottom-footer span.brand {
+        font-size: 25px;
+        font-family: "SignPainter", sans-serif;
+        color: #1abaf4;
+        font-weight: bold; }
     footer .bottom-footer a {
       text-decoration: underline;
       color: #696969; }
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    footer ul li a {
+      font-size: 12px; }
+    footer .social .time-item__icon img {
+      max-width: 25px; }
+    footer .social .time-item__text p:first-child {
+      font-size: 14px; }
+    footer .social .time-item__text p {
+      font-size: 12px; }
+    footer .social .phone-item__text p {
+      font-size: 14px; }
+    footer .social .phone-item__text a {
+      font-size: 10px; }
+    footer .social button.btn {
+      font-size: 14px; } }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    footer ul li a {
+      font-size: 13px; }
+    footer ul.social-icons {
+      margin-top: 23px; }
+    footer .pseudo {
+      position: relative; }
+      footer .pseudo:after {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 26%;
+        height: 118px;
+        width: 2px;
+        border-radius: 1px;
+        background-color: #106e98;
+        opacity: 0.1; }
+      footer .pseudo.pseudo-first:after {
+        right: 6%; }
+      footer .pseudo.pseudo-second:after {
+        right: 25%; }
+    footer .social {
+      margin-top: 20px; }
+      footer .social .time-item__icon img {
+        max-width: 25px; }
+      footer .social .time-item__text p:first-child {
+        font-size: 14px; }
+      footer .social .time-item__text p {
+        font-size: 12px; }
+      footer .social .phone-item__text {
+        display: flex;
+        flex-direction: column; }
+        footer .social .phone-item__text p {
+          font-size: 14px; }
+        footer .social .phone-item__text a {
+          font-size: 12px; }
+      footer .social button.btn {
+        margin-top: 20px;
+        font-size: 14px; } }
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    footer {
+      padding-top: 25px; }
+      footer h1 {
+        margin-top: 10px;
+        font-size: 20px; }
+      footer .pseudo:after {
+        display: none; }
+      footer ul li a {
+        font-size: 13px; }
+      footer ul.social-icons {
+        margin-top: 23px; }
+      footer .social {
+        margin-top: 20px; }
+        footer .social .time-item__icon img {
+          max-width: 25px; }
+        footer .social .time-item__text p:first-child {
+          font-size: 14px; }
+        footer .social .time-item__text p {
+          font-size: 12px; }
+        footer .social .phone-item__text {
+          display: flex;
+          flex-direction: column; }
+          footer .social .phone-item__text p {
+            font-size: 14px; }
+          footer .social .phone-item__text a {
+            font-size: 12px; }
+        footer .social button.btn {
+          margin-top: 20px;
+          font-size: 14px; } }
+  @media screen and (max-width: 575px) {
+    footer {
+      padding-top: 25px; }
+      footer h1 {
+        margin-top: 10px;
+        font-size: 20px; }
+      footer .pseudo:after {
+        display: none; }
+      footer ul {
+        margin-top: 10px; }
+        footer ul li a {
+          font-size: 14px; }
+        footer ul.social-icons {
+          margin-top: 23px; }
+      footer .social {
+        margin-top: 20px; }
+        footer .social .time-item__icon img {
+          max-width: 25px; }
+        footer .social .time-item__text p:first-child {
+          font-size: 14px; }
+        footer .social .time-item__text p {
+          font-size: 12px; }
+        footer .social .phone-item {
+          padding-top: 15px; }
+          footer .social .phone-item__text {
+            display: flex;
+            flex-direction: column; }
+            footer .social .phone-item__text p {
+              font-size: 14px; }
+            footer .social .phone-item__text a {
+              font-size: 12px; }
+        footer .social button.btn {
+          margin-top: 20px;
+          font-size: 14px; } }
