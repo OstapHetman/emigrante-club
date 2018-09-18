@@ -209,13 +209,16 @@ nav.navbar ul {
     font-size: 15px; }
   nav.navbar ul .time-item__text p {
     font-size: 13px; }
-  nav.navbar ul .phone-item__text p {
-    font-size: 15px; }
-  nav.navbar ul .phone-item__text a {
-    font-family: "PT Sans";
-    font-style: italic;
-    text-decoration: underline;
-    font-size: 12px; }
+  nav.navbar ul .phone-item__text {
+    display: flex;
+    flex-direction: column; }
+    nav.navbar ul .phone-item__text p {
+      font-size: 15px; }
+    nav.navbar ul .phone-item__text a {
+      font-family: "PT Sans";
+      font-style: italic;
+      text-decoration: underline;
+      font-size: 12px; }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
   nav.navbar a.navbar-brand {
@@ -878,3 +881,61 @@ footer {
         footer .social button.btn {
           margin-top: 20px;
           font-size: 14px; } }
+
+main#about-company-page {
+  padding-top: 60px;
+  padding-bottom: 60px; }
+  main#about-company-page h2 {
+    font-family: "PT Sans", sans-serif;
+    font-size: 92px;
+    font-weight: bold;
+    letter-spacing: 4.6px; }
+  main#about-company-page .background {
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../images/about/bg.png") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    min-height: 480px;
+    margin-bottom: 55px; }
+  main#about-company-page .about-text {
+    font-family: "Lato-Regular", sans-serif;
+    color: #000;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 1px; }
+    main#about-company-page .about-text p,
+    main#about-company-page .about-text ul,
+    main#about-company-page .about-text li,
+    main#about-company-page .about-text h4 {
+      font-family: "Lato-Regular", sans-serif;
+      color: #000;
+      font-size: 20px;
+      font-weight: 300;
+      letter-spacing: 1px; }
+    main#about-company-page .about-text p {
+      margin-bottom: 25px; }
+    main#about-company-page .about-text ul li {
+      margin-bottom: 25px; }
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    main#about-company-page h2 {
+      font-size: 60px; }
+    main#about-company-page .background {
+      min-height: 280px; } }
+  @media screen and (max-width: 575px) {
+    main#about-company-page {
+      padding-top: 35px;
+      padding-bottom: 35px; }
+      main#about-company-page h2 {
+        font-size: 38px; }
+      main#about-company-page .background {
+        min-height: 180px;
+        margin-bottom: 35px; }
+      main#about-company-page .about-text p,
+      main#about-company-page .about-text ul,
+      main#about-company-page .about-text li,
+      main#about-company-page .about-text h4 {
+        font-size: 15px; }
+      main#about-company-page .about-text p {
+        margin-bottom: 16px; }
+      main#about-company-page .about-text ul li {
+        margin-bottom: 16px; } }

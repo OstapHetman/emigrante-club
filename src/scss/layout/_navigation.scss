@@ -87,6 +87,8 @@ nav.navbar {
     }
     .phone-item {
       &__text {
+        display: flex;
+        flex-direction: column;
         p {
           font-size: 15px;
         }

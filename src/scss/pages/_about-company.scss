@@ -1,0 +1,75 @@
+main#about-company-page {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  h2 {
+    font-family: "PT Sans", sans-serif;
+    font-size: 92px;
+    font-weight: bold;
+    letter-spacing: 4.6px;
+  }
+  .background {
+    @include background(url("../images/about/bg.png"), 0.45);
+    min-height: 480px;
+    margin-bottom: 55px;
+  }
+  .about-text {
+    font-family: "Lato-Regular", sans-serif;
+    color: #000;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    p,
+    ul,
+    li,
+    h4 {
+      font-family: "Lato-Regular", sans-serif;
+      color: #000;
+      font-size: 20px;
+      font-weight: 300;
+      letter-spacing: 1px;
+    }
+    p {
+      margin-bottom: 25px;
+    }
+    ul {
+      li {
+        margin-bottom: 25px;
+      }
+    }
+  }
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    h2 {
+      font-size: 60px;
+    }
+    .background {
+      min-height: 280px;
+    }
+  }
+  @media screen and (max-width: 575px) {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    h2 {
+      font-size: 38px;
+    }
+    .background {
+      min-height: 180px;
+      margin-bottom: 35px;
+    }
+    .about-text {
+      p,
+      ul,
+      li,
+      h4 {
+        font-size: 15px;
+      }
+      p {
+        margin-bottom: 16px;
+      }
+      ul {
+        li {
+          margin-bottom: 16px;
+        }
+      }
+    }
+  }
+}
