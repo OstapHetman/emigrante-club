@@ -150,6 +150,14 @@
   .custom-modals .modal-body input[type="submit"] {
     font-size: 14px; } }
 
+.nav-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/nav-bg.png") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: #fff; }
+  .nav-bg nav.navbar a.navbar-brand {
+    color: #fff; }
+
 nav.navbar a.navbar-brand {
   font-family: "SignPainter", sans-serif;
   font-size: 45px;
@@ -229,6 +237,8 @@ nav.navbar ul {
       font-size: 15px; } }
 
 @media screen and (max-width: 991px) {
+  nav.navbar.second-nav {
+    padding: 0; }
   nav.navbar a.navbar-brand {
     font-size: 32px; }
   nav.navbar ul li a {
@@ -1031,7 +1041,6 @@ main#price-page {
     padding-bottom: 18px;
     margin-bottom: 40px; }
   main#price-page .items .item {
-    background-color: #fbfbfb;
     box-shadow: 0 0 32px rgba(80, 80, 80, 0.14);
     margin-bottom: 40px;
     padding: 35px 40px 35px 40px;
@@ -1063,3 +1072,148 @@ main#price-page {
       font-size: 17px;
       font-weight: 700;
       padding: 8px 60px; }
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    main#price-page h1 {
+      font-size: 36px;
+      margin-bottom: 60px; }
+    main#price-page h2 {
+      font-size: 36px; }
+    main#price-page .items .item {
+      padding: 30px 35px 30px 35px; }
+      main#price-page .items .item__top-part p {
+        font-size: 18px; }
+      main#price-page .items .item__middle-part p {
+        font-size: 15px; }
+      main#price-page .items .item__bottom-part p {
+        font-size: 18px; }
+      main#price-page .items .item__bottom-part button {
+        font-size: 15px;
+        padding: 8px 30px; } }
+  @media screen and (max-width: 575px) {
+    main#price-page {
+      padding-bottom: 0;
+      padding-top: 40px; }
+      main#price-page h1 {
+        font-size: 30px;
+        margin-bottom: 35px; }
+      main#price-page h2 {
+        font-size: 26px; }
+      main#price-page .items .item {
+        margin-bottom: 40px;
+        padding: 15px 20px 15px 20px; }
+        main#price-page .items .item__top-part p {
+          text-align: center;
+          font-size: 16px; }
+        main#price-page .items .item__middle-part p {
+          text-align: justify;
+          font-size: 15px; }
+        main#price-page .items .item__bottom-part {
+          display: flex;
+          flex-direction: column; }
+          main#price-page .items .item__bottom-part p {
+            font-size: 18px; }
+          main#price-page .items .item__bottom-part button {
+            margin-top: 7px;
+            font-size: 15px;
+            padding: 8px 30px; } }
+
+main.services-pages {
+  padding-bottom: 35px;
+  padding-top: 75px; }
+  main.services-pages h1 {
+    font-family: "PT Sans", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #008fc0;
+    margin-bottom: 0; }
+  main.services-pages .main-text {
+    padding-top: 50px;
+    padding-bottom: 75px; }
+    main.services-pages .main-text p,
+    main.services-pages .main-text h4,
+    main.services-pages .main-text ul,
+    main.services-pages .main-text ol,
+    main.services-pages .main-text li {
+      font-family: "Lato-Regular", sans-serif;
+      font-size: 20px;
+      letter-spacing: 1px;
+      font-weight: 300; }
+    main.services-pages .main-text p {
+      margin-bottom: 30px; }
+    main.services-pages .main-text ol h4,
+    main.services-pages .main-text ul h4 {
+      margin-bottom: 30px; }
+    main.services-pages .main-text ol,
+    main.services-pages .main-text ul {
+      margin-bottom: 30px; }
+  main.services-pages .items .item {
+    box-shadow: 0 0 32px rgba(80, 80, 80, 0.14);
+    margin-bottom: 40px;
+    padding: 35px 40px 35px 40px;
+    font-family: "Lato-Light", sans-serif; }
+    main.services-pages .items .item__top-part p {
+      font-size: 22px;
+      font-weight: bold;
+      letter-spacing: 1.1px;
+      color: #128dba; }
+    main.services-pages .items .item__middle-part {
+      border-top: 1px solid #e5f0f5;
+      border-bottom: 1px solid #e5f0f5;
+      margin: 20px 0; }
+      main.services-pages .items .item__middle-part p {
+        font-size: 15px;
+        font-weight: 600;
+        color: #000;
+        letter-spacing: 0.75px;
+        padding: 15px 0; }
+    main.services-pages .items .item__bottom-part p {
+      font-size: 22px;
+      font-weight: bold;
+      letter-spacing: 1.1px;
+      color: #000; }
+    main.services-pages .items .item__bottom-part button {
+      border-radius: 5px;
+      background-color: #08507a;
+      color: #fff;
+      font-size: 17px;
+      font-weight: 700;
+      padding: 8px 60px; }
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    main.services-pages h1 {
+      font-size: 36px; }
+    main.services-pages .items .item {
+      padding: 30px 35px 30px 35px; }
+      main.services-pages .items .item__top-part p {
+        font-size: 18px; }
+      main.services-pages .items .item__middle-part p {
+        font-size: 15px; }
+      main.services-pages .items .item__bottom-part p {
+        font-size: 18px; }
+      main.services-pages .items .item__bottom-part button {
+        font-size: 15px;
+        padding: 8px 30px; } }
+  @media screen and (max-width: 575px) {
+    main.services-pages {
+      padding-bottom: 0;
+      padding-top: 40px; }
+      main.services-pages h1 {
+        font-size: 30px; }
+      main.services-pages .items .item {
+        margin-bottom: 40px;
+        padding: 15px 20px 15px 20px; }
+        main.services-pages .items .item__top-part p {
+          text-align: center;
+          font-size: 16px; }
+        main.services-pages .items .item__middle-part p {
+          text-align: justify;
+          font-size: 15px; }
+        main.services-pages .items .item__bottom-part {
+          display: flex;
+          flex-direction: column; }
+          main.services-pages .items .item__bottom-part p {
+            font-size: 18px; }
+          main.services-pages .items .item__bottom-part button {
+            margin-top: 7px;
+            font-size: 15px;
+            padding: 8px 30px; } }
