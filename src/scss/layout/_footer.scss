@@ -28,6 +28,14 @@ footer {
     }
   }
   ul {
+    &.social-icons {
+      li {
+        padding-right: 15px;
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+    }
     li {
       a {
         color: #696969;
@@ -44,7 +52,7 @@ footer {
     }
   }
   .social {
-    font-family: "PT Sans";
+    font-family: "PT Sans-Regular";
     font-style: italic;
     color: #000;
     .time-item {

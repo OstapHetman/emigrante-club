@@ -79,7 +79,7 @@ nav.navbar {
         }
       }
     }
-    font-family: "PT Sans";
+    font-family: "PT Sans-Regular";
     font-style: italic;
     .time-item {
       &__icon {
@@ -149,21 +149,22 @@ nav.navbar {
       }
     }
     .navbar-collapse {
-      background: rgba(0, 0, 0, 0.8);
+      background: rgba(0, 0, 0, 0.93);
       position: absolute;
       top: -74px;
       right: 0px;
       left: 0px;
       z-index: 100;
       height: 100vh;
-      transition: all 0.5s;
+      transition: all 0.2s ease-in;
       ul {
-        transition: all 0.5s;
+        transition: all 0.2s ease-in;
         height: 100%;
         justify-content: center;
         .dropdown-menu {
           background-color: unset;
           border: unset;
+          padding: 0;
           a {
             font-size: 12px;
           }

@@ -65,14 +65,14 @@ header {
       }
       input[type="checkbox"]:checked {
         &:before {
-          content: "x";
+          content: "✓";
           display: block;
           position: absolute;
           color: #128dba;
-          font-size: 24px;
+          font-size: 22px;
           font-weight: bold;
-          top: -16px;
-          left: -5px;
+          top: -12px;
+          left: -7px;
           visibility: visible;
         }
       }
@@ -212,11 +212,11 @@ header {
         }
         .form-check {
           label {
-            font-size: 12px;
+            font-size: 10px;
           }
         }
         span {
-          font-size: 12px;
+          font-size: 10px;
         }
       }
     }

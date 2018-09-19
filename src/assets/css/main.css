@@ -1,6 +1,11 @@
+@charset "UTF-8";
 @font-face {
   font-family: "PT Sans";
   src: url("../fonts/PTSans/PTSans.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "PT Sans-Regular";
+  src: url("../fonts/PTSans/PTSans-Regular.ttf") format("truetype"); }
 
 @font-face {
   font-family: "Myriad Pro";
@@ -175,7 +180,7 @@ nav.navbar .navbar-toggler {
     outline: unset; }
 
 nav.navbar ul {
-  font-family: "PT Sans";
+  font-family: "PT Sans-Regular";
   font-style: italic; }
   nav.navbar ul.social li {
     padding-right: 15px; }
@@ -252,21 +257,22 @@ nav.navbar ul {
       width: 50%;
       margin: auto; }
   nav.navbar .navbar-collapse {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.93);
     position: absolute;
     top: -74px;
     right: 0px;
     left: 0px;
     z-index: 100;
     height: 100vh;
-    transition: all 0.5s; }
+    transition: all 0.2s ease-in; }
     nav.navbar .navbar-collapse ul {
-      transition: all 0.5s;
+      transition: all 0.2s ease-in;
       height: 100%;
       justify-content: center; }
       nav.navbar .navbar-collapse ul .dropdown-menu {
         background-color: unset;
-        border: unset; }
+        border: unset;
+        padding: 0; }
         nav.navbar .navbar-collapse ul .dropdown-menu a {
           font-size: 12px; } }
 
@@ -330,14 +336,14 @@ header {
         height: 22px;
         visibility: visible; }
     header .contact-form form input[type="checkbox"]:checked:before {
-      content: "x";
+      content: "✓";
       display: block;
       position: absolute;
       color: #128dba;
-      font-size: 24px;
+      font-size: 22px;
       font-weight: bold;
-      top: -16px;
-      left: -5px;
+      top: -12px;
+      left: -7px;
       visibility: visible; }
     header .contact-form form .form-check label {
       font-family: "Lato-light", sans-serif;
@@ -419,9 +425,9 @@ header {
           max-width: unset;
           margin-top: 15px; }
         header .contact-form form .form-check label {
-          font-size: 12px; }
+          font-size: 10px; }
         header .contact-form form span {
-          font-size: 12px; } }
+          font-size: 10px; } }
 
 #our-services {
   background-image: url("../images/our-services-bg.png");
@@ -508,7 +514,7 @@ header {
     background-repeat: no-repeat no-repeat;
     background-size: contain; }
     #about-company .about-text p {
-      font-family: "Myriad Pro";
+      font-family: "Lato", sans-serif;
       font-size: 20px;
       font-weight: 400;
       letter-spacing: 1px;
@@ -540,11 +546,7 @@ header {
         #about-company .flags .flag-item__image img {
           max-width: 100px; }
       #about-company .flags .flag-item__text {
-        font-family: "Myriad Pro";
-        font-size: 15px;
-        font-weight: 400;
-        letter-spacing: 1px;
-        color: #000; } }
+        font-size: 15px; } }
   @media screen and (max-width: 575px) {
     #about-company {
       padding-top: 35px;
@@ -558,7 +560,11 @@ header {
       #about-company .flags {
         padding-top: 25px; }
         #about-company .flags .flag-item a:hover {
-          transform: unset; } }
+          transform: unset; }
+        #about-company .flags .flag-item__image img {
+          max-width: 75px; }
+        #about-company .flags .flag-item__text p {
+          font-size: 12px; } }
 
 #achievements {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/achievements-bg.png") no-repeat;
@@ -621,12 +627,14 @@ header {
       #achievements h1 {
         padding-bottom: 35px;
         font-size: 30px; }
-      #achievements .achievement__icon img {
-        max-width: 30px; }
-      #achievements .achievement__text b {
-        font-size: 28px; }
-      #achievements .achievement__text p {
-        font-size: 18px; } }
+      #achievements .achievement {
+        justify-content: center; }
+        #achievements .achievement__icon img {
+          max-width: 30px; }
+        #achievements .achievement__text b {
+          font-size: 28px; }
+        #achievements .achievement__text p {
+          font-size: 18px; } }
 
 #go-to-spain {
   padding-top: 60px;
@@ -727,6 +735,10 @@ footer {
       border-radius: 1px;
       background-color: #106e98;
       opacity: 0.1; }
+  footer ul.social-icons li {
+    padding-right: 15px; }
+    footer ul.social-icons li:last-child {
+      padding-right: 0; }
   footer ul li a {
     color: #696969;
     font-family: "Lato", sans-serif;
@@ -738,7 +750,7 @@ footer {
       text-decoration: unset;
       color: #696969; }
   footer .social {
-    font-family: "PT Sans";
+    font-family: "PT Sans-Regular";
     font-style: italic;
     color: #000; }
     footer .social .time-item__icon img {
