@@ -1147,6 +1147,10 @@ main.services-pages {
     main.services-pages .main-text ol,
     main.services-pages .main-text ul {
       margin-bottom: 30px; }
+    main.services-pages .main-text ul li {
+      margin-bottom: 20px; }
+      main.services-pages .main-text ul li:last-child {
+        margin-bottom: 0px; }
   main.services-pages .items .item {
     box-shadow: 0 0 32px rgba(80, 80, 80, 0.14);
     margin-bottom: 40px;
@@ -1198,7 +1202,28 @@ main.services-pages {
       padding-bottom: 0;
       padding-top: 40px; }
       main.services-pages h1 {
-        font-size: 30px; }
+        font-size: 26px; }
+      main.services-pages .main-text {
+        padding-top: 25px;
+        padding-bottom: 50px; }
+        main.services-pages .main-text p,
+        main.services-pages .main-text h4,
+        main.services-pages .main-text ul,
+        main.services-pages .main-text ol,
+        main.services-pages .main-text li {
+          font-size: 15px; }
+        main.services-pages .main-text p {
+          margin-bottom: 15px; }
+        main.services-pages .main-text ol h4,
+        main.services-pages .main-text ul h4 {
+          margin-bottom: 15px; }
+        main.services-pages .main-text ol,
+        main.services-pages .main-text ul {
+          margin-bottom: 15px; }
+        main.services-pages .main-text ul li {
+          margin-bottom: 10px; }
+          main.services-pages .main-text ul li:last-child {
+            margin-bottom: 0px; }
       main.services-pages .items .item {
         margin-bottom: 40px;
         padding: 15px 20px 15px 20px; }
