@@ -500,7 +500,8 @@ header {
   /* Safari 3.1-5 */
   -o-border-image: url("../images/border.png") 30 stretch;
   /* Opera 11-12.1 */
-  border-image: url("../images/border.png") 30 stretch; }
+  border-image: url("../images/border.png") 30 stretch;
+  border-bottom: unset; }
   #about-company h1 {
     font-family: "PT Sans";
     color: #128dba;
@@ -577,6 +578,7 @@ header {
   -o-border-image: url("../images/border.png") 30 stretch;
   /* Opera 11-12.1 */
   border-image: url("../images/border.png") 30 stretch;
+  border-top: 5px solid;
   padding: 80px 0; }
   #achievements h1 {
     padding-bottom: 70px;

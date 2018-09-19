@@ -3,6 +3,7 @@
   padding-top: 40px;
   padding-bottom: 55px;
   @include imageBorder;
+  border-bottom: unset;
   h1 {
     font-family: "PT Sans";
     color: $title-clr;
